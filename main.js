@@ -36,7 +36,7 @@ function setComic() {
     var json = JSON.parse(request.responseText);
     
     // Modify elements
-    c_number.textContent = json.get("number");
+    c_number.textContent = num;
     c_title.textContent = json.get("title");
     c_image.src = json.get("src");
     c_image.alt = json.get("transcript");
