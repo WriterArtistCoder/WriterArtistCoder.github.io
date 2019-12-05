@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tiny Stripz - A Webcomic</title>
+        
+		<link rel="stylesheet" type="text/css" href="main.css">
+        <link id="theme-css" rel="stylesheet" type="text/css" href="dark.css">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%20Slab:400&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%20Mono:400&display=swap">
+        
+        <script src="main.js"></script>
+	</head>
+    
+    <body onload="onLoad()">
+        <header class="card">
+            <h1 id="title"><a href="index.html"><img onload="deleteTextTitle()" src="resources/TinyStripzLogo.png" alt="Tiny Stripz"></a></h1>
+            <p id="description">Tiny Stripz is a fantasy/gag-a-day/random absurdness webcomic!<br/>
+                Featuring stick figures Fred, Amanda, Elaine, Max and Alex. Also check out my <a href="https://wrong.tinystripz.com">physics site</a>!<br/>
+                Updated on Saturdays and Mondays with makeup comics.</p>
+        </header>
+    
+        <section class="card">
+            <h2>#<span id="comic-number">1</span>: <span id="comic-title">Title</span></h2>
+            <img id="comic-image" src="comic-src" alt="comic-transcript">
+            <div id="comic-caption">Caption</div>
+        </section>
+    
+        <footer>
+            <div class="card" id="copyright">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="resources/dif-license/by-sa.svg" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Tiny Stripz</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://tinystripz.com" property="cc:attributionName" rel="cc:attributionURL">https://tinystripz.com</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a> except where otherwise noted.
+            </div>
+            
+            <button id="theme-button" onclick="switchTheme()">Light theme</button>
+        </footer>
+    </body>
+</html>

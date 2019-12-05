@@ -1,0 +1,40 @@
+/* Variables */
+:root {
+    --background-color: #fff;
+    
+    --primary-color: #0099ff;
+    --primary-light: #69c9ff;
+    --primary-dark: #006ccb;
+    
+    --card-outline: rgba(0, 0, 0, 0.38);
+    --card-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Modifications */
+* {
+	color: #000;
+}
+
+button {
+    background-color: var(--primary-light);
+    border: 1px solid var(--primary-color);
+}
+
+/* Animations */
+@keyframes card-hover {
+    from {}
+    
+    to {
+        border-color: transparent;
+        box-shadow: var(--card-shadow);
+    }
+}
+
+@keyframes button-hover {
+    from {}
+    
+    to {
+        border-color: transparent;
+        box-shadow: var(--card-shadow);
+    }
+}

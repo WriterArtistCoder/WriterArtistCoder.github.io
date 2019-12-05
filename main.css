@@ -1,0 +1,81 @@
+/* Variables */
+:root {
+    --margin: 12px auto 12px auto;
+}
+
+/* CSS for general areas */
+body {
+    background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CSS for headings, links, etc. */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+a {
+    color: var(--primary-color);
+    font-family: 'Roboto Slab', sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    animation-name: a-hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes a-hover {
+    from {}
+    
+    to {
+        color: var(--primary-light);
+    }
+}
+
+footer {
+    text-align: center;
+    display: block;
+    margin: var(--margin);
+    width: 50%;
+}
+
+/* CSS for Material cards, buttons, etc. */
+
+.card {
+    background-color: var(--card-color);
+    border: 1px solid var(--card-outline);
+	border-radius: 10px;
+    
+    text-align: center;
+    display: block;
+    margin: var(--margin);
+	padding: 8px;
+}
+
+.card:hover {
+    animation-name: card-hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+	border-radius: 5px;
+    
+    text-align: center;
+    display: block;
+    margin: var(--margin);
+	padding: 8px;
+    
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+}
+
+button:hover {
+    animation-name: button-hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
