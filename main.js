@@ -17,10 +17,11 @@ function switchTheme() {
 function setComic() {
     // Get the comic number from the URL
     var url = location.href;
-    var latestNum = 212;
-    var num;
+    var latestNum = 0;
+    var comicNum = latestNum;
+    
     if (url.indexOf("?n=") != -1) {
-        num = url.substring(url.indexOf("?n=")+3, url.length);
+        comicNum = url.substring(url.indexOf("?n=")+3, url.length);
     }
     
     // Get the elements that need modification
@@ -34,11 +35,12 @@ function setComic() {
     request.open("GET", "resources/comics/comics.json", false);
     request.send(null);
     var json = JSON.parse(request.responseText);
+    json = json[comicNum]; // Set the JSON object to the correct comic
     
-    // Modify elements
-    c_number.textContent = num;
-    c_title.textContent = json.get("title");
-    c_image.src = json.get("src");
-    c_image.alt = json.get("transcript");
-    c_caption.innerHTML = json.get("caption");
+    // Modify 
+    c_number.textContent = json.number;
+    c_title.textContent = json.title;
+    c_image.src = json.src;
+    c_image.alt = json.transcript;
+    c_caption.innerHTML = json.caption;
 }
