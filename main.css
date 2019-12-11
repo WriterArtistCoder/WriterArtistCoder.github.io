@@ -16,15 +16,21 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: var(--primary-color);
-    font-family: 'Roboto Slab', sans-serif;
     text-decoration: none;
 }
 
+a .tab {
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+}
+
+/*
 a:hover {
     animation-name: a-hover;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
+*/
 
 @keyframes a-hover {
     from {}
@@ -61,14 +67,16 @@ footer {
 }
 
 button {
-    background-color: transparent;
+    background-color: var(--primary-color);
     border: none;
 	border-radius: 5px;
     
+    cursor: pointer;
+    
     text-align: center;
-    display: block;
+    display: inline-block;
     margin: var(--margin);
-	padding: 8px;
+	padding: 8px 12px 8px 12px;
     
     font-family: 'Roboto Mono', monospace;
     text-transform: uppercase;

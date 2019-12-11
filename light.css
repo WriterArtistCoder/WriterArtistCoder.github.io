@@ -16,8 +16,8 @@
 }
 
 button {
-    background-color: var(--primary-light);
     border: 1px solid var(--primary-color);
+    color: white;
 }
 
 /* Animations */

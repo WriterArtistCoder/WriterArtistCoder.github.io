@@ -19,7 +19,6 @@
 }
 
 button {
-    background-color: var(--primary-color);
     color: black;
 }
 
@@ -40,6 +39,5 @@ button {
     to {
         background-color: var(--primary-light);
         box-shadow: var(--card-shadow);
-        color: black;
     }
 }
