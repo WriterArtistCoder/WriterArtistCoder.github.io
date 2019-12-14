@@ -12,6 +12,7 @@ body {
 /* CSS for headings, links, etc. */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', sans-serif;
+    font-variant: small-caps;
 }
 
 a {
@@ -24,13 +25,11 @@ a .tab {
     text-transform: uppercase;
 }
 
-/*
 a:hover {
     animation-name: a-hover;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
-*/
 
 @keyframes a-hover {
     from {}
