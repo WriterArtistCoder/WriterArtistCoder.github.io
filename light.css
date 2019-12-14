@@ -2,12 +2,12 @@
 :root {
     --background-color: #fff;
     
-    --primary-color: #0099ff;
-    --primary-light: #69c9ff;
-    --primary-dark: #006ccb;
+    --primary-color: #9700f9;
+    --primary-light: #a93dfc;
     
+    --card-color: transparent;
+    --card-color-hover: transparent;
     --card-outline: rgba(0, 0, 0, 0.38);
-    --card-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Modifications */
@@ -15,26 +15,12 @@
 	color: #000;
 }
 
-button {
-    border: 1px solid var(--primary-color);
+#theme-button {
+    background-color: black;
     color: white;
 }
 
-/* Animations */
-@keyframes card-hover {
-    from {}
-    
-    to {
-        border-color: transparent;
-        box-shadow: var(--card-shadow);
-    }
-}
-
-@keyframes button-hover {
-    from {}
-    
-    to {
-        border-color: transparent;
-        box-shadow: var(--card-shadow);
-    }
+button {
+    border: 1px solid var(--primary-color);
+    color: white;
 }

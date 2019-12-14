@@ -4,13 +4,10 @@ function onLoad() {
 
 function switchTheme() {
     var theme = document.getElementById("theme-css");
-    var button = document.getElementById("theme-button");
     if (theme.href.endsWith("dark.css")) {
         theme.href = "light.css";
-        button.textContent = "Dark theme";
     } else if (theme.href.endsWith("light.css")) {
         theme.href = "dark.css";
-        button.textContent = "Light theme";
     }
 }
 

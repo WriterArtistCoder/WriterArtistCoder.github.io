@@ -1,52 +1,92 @@
 /* Variables */
 :root {
-    --margin: 12px auto 12px auto;
+    --card-shadow: 0 0 20px #000000a0;
+    --card-shadow-hover: 0 0 20px #000000c0;
 }
 
-/* CSS for general areas */
+/* CSS for links, headings, paragraphs, etc. */
 body {
     background-color: var(--background-color);
     font-family: 'Roboto', sans-serif;
+    
+    transition: background-color 250ms, color 250ms;
 }
 
-/* CSS for headings, links, etc. */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
     font-variant: small-caps;
+}
+
+p, a {
+    font-size: 18px;
 }
 
 a {
     color: var(--primary-color);
     text-decoration: none;
-}
-
-a .tab {
-    font-family: 'Roboto Mono', monospace;
-    text-transform: uppercase;
+    transition: all 500ms;
 }
 
 a:hover {
-    animation-name: a-hover;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    color: var(--primary-light);
 }
 
-@keyframes a-hover {
-    from {}
-    
-    to {
-        color: var(--primary-light);
-    }
+/* CSS for midsection and footer */
+#theme-button {
+    bottom: 140px;
+}
+
+#comic-image {
+    transition: all 250ms;
+    width: 40%;
+}
+
+#comic-image:hover {
+    box-shadow: var(--card-shadow);
+    transform: scale(1.05);
 }
 
 footer {
+    display: inline;
+}
+
+footer .card {
+    float: left;
     text-align: center;
-    display: block;
-    margin: var(--margin);
     width: 50%;
 }
 
+footer button {
+    margin: 12px auto 12px auto;
+    float: right;
+}
+
 /* CSS for Material cards, buttons, etc. */
+.fab {
+    background-color: red;
+    color: white;
+    
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: var(--card-shadow);
+    
+    font-size: 50px;
+    text-align: center;
+    line-height: 70px;
+ 
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    
+    transition: all 250ms;
+}
+ 
+.fab:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: scale(1.2);
+}
 
 .card {
     background-color: var(--card-color);
@@ -55,34 +95,15 @@ footer {
     
     text-align: center;
     display: block;
-    margin: var(--margin);
+    margin: 12px auto 12px auto;
 	padding: 8px;
+    width: 100%;
+    
+    transition: all 500ms;
 }
 
 .card:hover {
-    animation-name: card-hover;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-button {
-    background-color: var(--primary-color);
-    border: none;
-	border-radius: 5px;
-    
-    cursor: pointer;
-    
-    text-align: center;
-    display: inline-block;
-    margin: var(--margin);
-	padding: 8px 12px 8px 12px;
-    
-    font-family: 'Roboto Mono', monospace;
-    text-transform: uppercase;
-}
-
-button:hover {
-    animation-name: button-hover;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    background-color: var(--card-color-hover);
+    border-color: transparent;
+    box-shadow: var(--card-shadow);
 }
