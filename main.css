@@ -36,7 +36,7 @@ a:hover {
 #theme-button {
     background-color: red;
     
-    left: 50px;
+    left: 100px;
     top: 50px;
 }
 
@@ -51,20 +51,14 @@ a:hover {
 }
 
 footer {
-    display: inline;
-}
-
-footer .card {
+    display: block;
     float: center;
-    text-align: center;
+    margin: 50px auto 50px auto;
     width: 50%;
+    text-align: center;
 }
 
 /* CSS for Material cards, buttons, etc. */
-.mdc-fab {
-    position: fixed;
-}
-
 .mdc-fab:hover {
     transform: scale(1.1);
 }
@@ -76,9 +70,8 @@ footer .card {
     
     text-align: center;
     display: block;
-    margin: 12px auto 12px auto;
+    margin: 12px 50px 12px 50px;
 	padding: 8px;
-    width: 100%;
     
     transition: all 500ms;
 }

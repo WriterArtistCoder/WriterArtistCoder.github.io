@@ -10,12 +10,7 @@
     --card-outline: rgba(0, 0, 0, 0.38);
 }
 
-/* Modifications */
+/* Small modifications */
 * {
-	color: #000;
-}
-
-button {
-    border: 1px solid var(--primary-color);
-    color: white;
+    color: black;
 }

@@ -32,6 +32,7 @@ function setComic() {
     // Get the elements that need modification
     var c_number = document.getElementById("comic-number");
     var c_title = document.getElementById("comic-title");
+    var c_link = document.getElementById("comic-link");
     var c_image = document.getElementById("comic-image");
     var c_caption = document.getElementById("comic-caption");
     
@@ -45,6 +46,7 @@ function setComic() {
     // Modify 
     c_number.textContent = json.number;
     c_title.textContent = json.title;
+    c_link.href = json.src;
     c_image.src = json.src;
     c_image.alt = json.transcript;
     c_caption.innerHTML = json.caption;
