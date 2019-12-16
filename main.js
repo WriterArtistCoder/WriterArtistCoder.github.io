@@ -1,16 +1,24 @@
+// On load
 function onLoad() {
-    setComic();
+    setComic(); // Set the comic to be displayed
 }
 
+// Toggle the theme (light, dark)
 function switchTheme() {
-    var theme = document.getElementById("theme-css");
-    if (theme.href.endsWith("dark.css")) {
-        theme.href = "light.css";
-    } else if (theme.href.endsWith("light.css")) {
-        theme.href = "dark.css";
+    var theme = document.getElementById("theme-css"); // Get the stylesheet
+    var icons = document.getElementsByClassName("material-icons"); // Get all icon elements
+    
+    if (theme.href.endsWith("dark.css")) { // If the stylesheet is importing dark.css
+        theme.href = "light.css"; // Set it to light.css
+    } else if (theme.href.endsWith("light.css")) { // If the stylesheet is importing light.css
+        theme.href = "dark.css"; // Set it to dark.css
     }
+    
+    
+    
 }
 
+// Set the comic to be displayed
 function setComic() {
     // Get the comic number from the URL
     var url = location.href;

@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
+<!--        Metadata -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Tiny Stripz - A Webcomic</title>
         
+<!--        Import favicon and stylesheets -->
 		<link rel="stylesheet" type="text/css" href="main.css">
         <link id="theme-css" rel="stylesheet" type="text/css" href="light.css">
         <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
         
+<!--        Import Material Design -->
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        
+<!--        Import fonts and icon fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%20Condensed:400&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%20Mono:400&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         
+<!--        Import local JavaScript -->
         <script src="main.js"></script>
 	</head>
     
     <body onload="onLoad()">
-        <div class="fab" id="theme-button" onclick="switchTheme()">&lt;</div>
-        <div class="fab">&lt;</div>
+<!--        FABs -->
+        <button class="mdc-fab" aria-label="SwitchTheme" id="theme-button" onclick="switchTheme()">
+            <div class="mdc-fab__ripple"></div>
+            <span class="mdc-fab__icon material-icons md-light">color_lens</span>
+        </button>
         
+<!--        Header -->
         <header class="card">
             <h1><a href="index.html"><img onload="deleteTextTitle()" src="resources/TinyStripzLogo.png" alt="Tiny Stripz"></a></h1>
             <p id="description">Tiny Stripz is a fantasy/gag-a-day/random absurdness webcomic!<br/>
@@ -29,6 +42,7 @@
             </span>
         </header>
     
+<!--        Midsection -->
         <section class="card">
             <h2>#<span id="comic-number">1</span>: <span id="comic-title">Title</span></h2>
             <div>
@@ -37,10 +51,12 @@
             </div>
         </section>
     
+<!--        Footer -->
         <footer>
             <div class="card" id="copyright">
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="resources/dif-license/by-sa.svg" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Tiny Stripz</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://tinystripz.com" property="cc:attributionName" rel="cc:attributionURL">https://tinystripz.com</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a> except where otherwise noted.
             </div>
         </footer>
+        
     </body>
 </html>

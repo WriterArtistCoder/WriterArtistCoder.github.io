@@ -34,7 +34,10 @@ a:hover {
 
 /* CSS for midsection and footer */
 #theme-button {
-    bottom: 140px;
+    background-color: red;
+    
+    left: 50px;
+    top: 50px;
 }
 
 #comic-image {
@@ -52,40 +55,19 @@ footer {
 }
 
 footer .card {
-    float: left;
+    float: center;
     text-align: center;
     width: 50%;
 }
 
-footer button {
-    margin: 12px auto 12px auto;
-    float: right;
+/* CSS for Material cards, buttons, etc. */
+.mdc-fab {
+    position: fixed;
 }
 
-/* CSS for Material cards, buttons, etc. */
-.fab {
-    background-color: red;
-    color: white;
-    
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    box-shadow: var(--card-shadow);
-    
-    font-size: 50px;
-    text-align: center;
-    line-height: 70px;
- 
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    
-    transition: all 250ms;
-}
- 
-.fab:hover {
+.mdc-fab:hover {
     box-shadow: var(--card-shadow-hover);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .card {
