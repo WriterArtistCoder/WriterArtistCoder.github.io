@@ -25,15 +25,14 @@
         <script src="main.js"></script>
 	</head>
     
-    <body onload="setComic()">
+    <body>
 <!--        Site navigation -->
         <div class="navigation">
             <ul style="list-style: none;">
-                <li><a class="card" href="index.html">Home</a></li>
-                <li><a class="card" href="about.html">About</a></li>
-                <li><a class="card" href="contact.html">Contact</a></li>
+                <li class="card"><a href="index.html">Home</a></li>
+                <li class="card"><a href="about.html">About</a></li>
+                <li class="card"><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
         
 <!--        FABs -->
         <button class="mdc-fab" aria-label="SwitchTheme" id="theme-button" onclick="switchTheme()">
@@ -44,27 +43,25 @@
 <!--        Header -->
         <header class="card">
             <h1><a><img onload="deleteTextTitle()" src="resources/TinyStripzLogo.png" alt="Tiny Stripz"></a></h1>
-            
-            <p id="description">
-                Tiny Stripz is a fantasy/gag-a-day/random absurdness webcomic!<br/>
+            <p id="description">Tiny Stripz is a fantasy/gag-a-day/random absurdness webcomic!<br/>
                 Featuring stick figures Fred, Amanda, Elaine, Max and Alex. Also check out my <a href="https://wrong.tinystripz.com">physics site</a>!<br/>
-                Updated on Saturdays and Mondays with makeup comics.
-            </p>
+                Updated on Saturdays and Mondays with makeup comics.</p>
         </header>
         
 <!--        Midsection -->
-        <section>
-            <!--        Comic -->
-            <div class="card comic">
-                <h2>#<span id="comic-number">1</span>: <span id="comic-title">Title</span></h2>
-                <div>
-                    <a id="comic-link" target="_blank">
-                        <img id="comic-image" src="" alt="comic-transcript">
-                    </a>
-
-                    <div id="comic-caption">Caption</div>
-                </div>
-            </div>
+        <section class="card">
+            <h2>About</h2>
+            <p>
+                Tiny Stripz is a webcomic about the quirky adventures of Elaine, her cousins Fred and Amanda, and her sons Alex and Max. It started on 2018-04-22!
+                
+                <br><br>It is drawn completely by me but sometimes gets feedback/inspiration from friends and family.
+                
+                <br><br>I draw on a Samsung Galaxy Tab S4 (SM-T830) and Samsung S Pen. It makes my drawing a whole lot easier. 🖊👍
+                
+                <br>Tiny Stripz is half gag-a-day, half long storylines. I have a fondness for destroying walls and ceilings in my comic strips.
+                
+                <br><br>Schedule: Sundays and Saturdays, sometimes with makeup comics.
+            </p>
         </section>
     
 <!--        Footer -->

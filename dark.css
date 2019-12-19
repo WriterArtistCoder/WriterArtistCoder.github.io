@@ -1,13 +1,14 @@
 /* Variables */
 :root {
+    --primary-color: #4cb4ff;
+    --primary-light: #b9deff;
+    
+    --secondary-color: #ff9100;
+    --secondary-light: #ffc246;
+    
     --background-color: #121212;
-    
-    --primary-color: #cf93fd;
-    --primary-light: #f4e5fe;
-    
-    --card-color: transparent;
-    --card-color-hover: rgba(255, 255, 255, 0.08);
-    --card-outline: rgba(255, 255, 255, 0.38);
+    --surface-color: #1f1f1f;
+    --surface-color-hover: #313131;
 }
 
 /* Small modifications */
@@ -15,6 +16,6 @@
     color: white;
 }
 
-button {
-    color: black;
+.navigation a {
+    color: white;
 }

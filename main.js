@@ -1,8 +1,3 @@
-// On load
-function onLoad() {
-    setComic(); // Set the comic to be displayed
-}
-
 // Toggle the theme (light, dark)
 function switchTheme() {
     var theme = document.getElementById("theme-css"); // Get the stylesheet

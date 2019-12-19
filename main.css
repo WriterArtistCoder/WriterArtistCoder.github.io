@@ -1,7 +1,7 @@
 /* Variables */
 :root {
-    --card-shadow: 0 0 20px #000000a0;
-    --card-shadow-hover: 0 0 20px #000000c0;
+    --card-shadow: 0 8px 10px #00000020;
+    --card-shadow-hover: 0 8px 20px #00000080;
 }
 
 /* CSS for links, headings, paragraphs, etc. */
@@ -9,7 +9,7 @@ body {
     background-color: var(--background-color);
     font-family: 'Roboto', sans-serif;
     
-    transition: background-color 250ms, color 250ms;
+    transition: background-color 500ms, color 1000ms;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,20 +34,14 @@ a:hover {
 
 /* CSS for midsection and footer */
 #theme-button {
-    background-color: red;
+    background-color: var(--secondary-color);
     
     left: 100px;
     top: 50px;
 }
 
 #comic-image {
-    transition: all 250ms;
     width: 40%;
-}
-
-#comic-image:hover {
-    box-shadow: var(--card-shadow);
-    transform: scale(1.05);
 }
 
 footer {
@@ -60,24 +54,24 @@ footer {
 
 /* CSS for Material cards, buttons, etc. */
 .mdc-fab:hover {
+    box-shadow: var(--card-shadow-hover);
     transform: scale(1.1);
 }
 
 .card {
-    background-color: var(--card-color);
-    border: 1px solid var(--card-outline);
-	border-radius: 10px;
+    background-color: var(--surface-color);
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
     
     text-align: center;
     display: block;
     margin: 12px 50px 12px 50px;
-	padding: 8px;
+	padding: 15px;
     
     transition: all 500ms;
 }
 
 .card:hover {
-    background-color: var(--card-color-hover);
-    border-color: transparent;
-    box-shadow: var(--card-shadow);
+    background-color: var(--surface-color-hover);
+    box-shadow: var(--card-shadow-hover);
 }

@@ -1,13 +1,14 @@
 /* Variables */
 :root {
-    --background-color: #fff;
+    --primary-color: #006eff;
+    --primary-light: #6a9cff;
     
-    --primary-color: #9700f9;
-    --primary-light: #a93dfc;
+    --secondary-color: #ff9100;
+    --secondary-light: #ffc246;
     
-    --card-color: transparent;
-    --card-color-hover: transparent;
-    --card-outline: rgba(0, 0, 0, 0.38);
+    --background-color: #fafafa;
+    --surface-color: #fff;
+    --surface-color-hover: #fff;
 }
 
 /* Small modifications */

@@ -25,15 +25,14 @@
         <script src="main.js"></script>
 	</head>
     
-    <body onload="setComic()">
+    <body>
 <!--        Site navigation -->
         <div class="navigation">
             <ul style="list-style: none;">
-                <li><a class="card" href="index.html">Home</a></li>
-                <li><a class="card" href="about.html">About</a></li>
-                <li><a class="card" href="contact.html">Contact</a></li>
+                <li class="card"><a href="index.html">Home</a></li>
+                <li class="card"><a href="about.html">About</a></li>
+                <li class="card"><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
         
 <!--        FABs -->
         <button class="mdc-fab" aria-label="SwitchTheme" id="theme-button" onclick="switchTheme()">
@@ -44,27 +43,43 @@
 <!--        Header -->
         <header class="card">
             <h1><a><img onload="deleteTextTitle()" src="resources/TinyStripzLogo.png" alt="Tiny Stripz"></a></h1>
-            
-            <p id="description">
-                Tiny Stripz is a fantasy/gag-a-day/random absurdness webcomic!<br/>
+            <p id="description">Tiny Stripz is a fantasy/gag-a-day/random absurdness webcomic!<br/>
                 Featuring stick figures Fred, Amanda, Elaine, Max and Alex. Also check out my <a href="https://wrong.tinystripz.com">physics site</a>!<br/>
-                Updated on Saturdays and Mondays with makeup comics.
-            </p>
+                Updated on Saturdays and Mondays with makeup comics.</p>
         </header>
         
 <!--        Midsection -->
-        <section>
-            <!--        Comic -->
-            <div class="card comic">
-                <h2>#<span id="comic-number">1</span>: <span id="comic-title">Title</span></h2>
-                <div>
-                    <a id="comic-link" target="_blank">
-                        <img id="comic-image" src="" alt="comic-transcript">
-                    </a>
-
-                    <div id="comic-caption">Caption</div>
-                </div>
-            </div>
+        <section class="card">
+            <h2>Contact</h2>
+            <ul>
+                <li>
+                    <a href="https://twitter.com/tinystripz" class="mdc-button">Twitter</a>
+                </li>
+                
+                <li>
+                    <a onclick="alert('WriterArtistCoder#6032')" class="mdc-button">Discord</a>
+                </li>
+                
+                <li>
+                    <a href="https://www.reddit.com/user/WriterArtistCoder" class="mdc-button">Reddit</a>
+                </li>
+                
+                <li>
+                    <a href="https://www.tiktok.com/@lemonscameraaction" class="mdc-button">TikTok</a>
+                </li>
+                
+                <li>
+                    <a href="https://www.youtube.com/channel/UCaaDs7E3pTLr0Puk_NARvfQ" class="mdc-button">YouTube</a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/WriterArtistCoder" class="mdc-button">Github</a>
+                </li>
+                
+                <li>
+                    <a href="https://disqus.com/by/percyghenburg" class="mdc-button">Disqus</a>
+                </li>
+            </ul>
         </section>
     
 <!--        Footer -->
