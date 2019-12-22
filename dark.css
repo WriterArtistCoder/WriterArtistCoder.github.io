@@ -9,13 +9,6 @@
     --background-color: #121212;
     --surface-color: #1f1f1f;
     --surface-color-hover: #313131;
-}
-
-/* Small modifications */
-* {
-    color: white;
-}
-
-.navigation a {
-    color: white;
+    
+    --text-color: white;
 }

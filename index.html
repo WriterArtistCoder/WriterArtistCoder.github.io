@@ -25,21 +25,20 @@
         <script src="main.js"></script>
 	</head>
     
-    <body onload="setComic()">
-<!--        Site navigation -->
-        <div class="navigation">
-            <ul style="list-style: none;">
-                <li><a class="card" href="index.html">Home</a></li>
-                <li><a class="card" href="about.html">About</a></li>
-                <li><a class="card" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        
+    <body onload="onLoad()">
 <!--        FABs -->
         <button class="mdc-fab" aria-label="SwitchTheme" id="theme-button" onclick="switchTheme()">
             <div class="mdc-fab__ripple"></div>
             <span class="mdc-fab__icon material-icons md-light">color_lens</span>
         </button>
+        
+<!--        Site navigation -->
+        <span class="navigation card">
+            ▶
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+        </span>
         
 <!--        Header -->
         <header class="card">

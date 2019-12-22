@@ -1,3 +1,8 @@
+// On load
+function onLoad() {
+    setComic();
+}
+
 // Toggle the theme (light, dark)
 function switchTheme() {
     var theme = document.getElementById("theme-css"); // Get the stylesheet

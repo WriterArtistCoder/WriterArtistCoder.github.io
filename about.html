@@ -26,26 +26,29 @@
 	</head>
     
     <body>
-<!--        Site navigation -->
-        <div class="navigation">
-            <ul style="list-style: none;">
-                <li class="card"><a href="index.html">Home</a></li>
-                <li class="card"><a href="about.html">About</a></li>
-                <li class="card"><a href="contact.html">Contact</a></li>
-            </ul>
-        
 <!--        FABs -->
         <button class="mdc-fab" aria-label="SwitchTheme" id="theme-button" onclick="switchTheme()">
             <div class="mdc-fab__ripple"></div>
             <span class="mdc-fab__icon material-icons md-light">color_lens</span>
         </button>
         
+<!--        Site navigation -->
+        <span class="navigation card">
+            ▶
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+        </span>
+        
 <!--        Header -->
         <header class="card">
             <h1><a><img onload="deleteTextTitle()" src="resources/TinyStripzLogo.png" alt="Tiny Stripz"></a></h1>
-            <p id="description">Tiny Stripz is a fantasy/gag-a-day/random absurdness webcomic!<br/>
+            
+            <p id="description">
+                Tiny Stripz is a fantasy/gag-a-day/random absurdness webcomic!<br/>
                 Featuring stick figures Fred, Amanda, Elaine, Max and Alex. Also check out my <a href="https://wrong.tinystripz.com">physics site</a>!<br/>
-                Updated on Saturdays and Mondays with makeup comics.</p>
+                Updated on Saturdays and Mondays with makeup comics.
+            </p>
         </header>
         
 <!--        Midsection -->

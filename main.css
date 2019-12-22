@@ -7,6 +7,7 @@
 /* CSS for links, headings, paragraphs, etc. */
 body {
     background-color: var(--background-color);
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     
     transition: background-color 500ms, color 1000ms;
@@ -33,6 +34,50 @@ a:hover {
 }
 
 /* CSS for midsection and footer */
+.navigation {
+    color: white;
+    
+    float: left;
+    font-variant: small-caps;
+    margin: auto;
+    position: absolute;
+    
+    left: 150px;
+    top: 50px;
+    width: 5%;
+    height: 20px;
+    
+    transition: all 500ms;
+}
+
+.navigation.card {
+    background-color: var(--secondary-color);
+}
+
+.navigation a {
+    color: transparent;
+    float: left;
+    margin-right: 50px;
+    
+    visibility: hidden;
+    transition: color 500ms;
+    transition-delay: 500ms;
+}
+
+.navigation:hover {
+    width: 30%;
+}
+
+.navigation.card:hover {
+    background-color: var(--secondary-color);
+    opacity: 90%;
+}
+
+.navigation:hover a {
+    color: white;
+    visibility: visible;
+}
+
 #theme-button {
     background-color: var(--secondary-color);
     

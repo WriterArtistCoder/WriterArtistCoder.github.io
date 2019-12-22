@@ -9,9 +9,6 @@
     --background-color: #fafafa;
     --surface-color: #fff;
     --surface-color-hover: #fff;
-}
-
-/* Small modifications */
-* {
-    color: black;
+    
+    --text-color: black;
 }
